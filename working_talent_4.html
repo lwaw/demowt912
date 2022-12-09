@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function mijnmethode(){
+            var age = document.getElementById("invoerding").value
+            age = parseInt(age);
+            if(age >= 18){
+                document.getElementById("uitkomst").style.backgroundColor = 'green';
+                document.getElementById("uitkomst").innerHTML = "Goed ";
+            }else{
+                document.getElementById("uitkomst").style.backgroundColor = 'red';
+                document.getElementById("uitkomst").innerHTML = "Slecht ";
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input id="invoerding"></body> <button onclick="mijnmethode()">Klik hier</button>
+    <div id="uitkomst">resultaat</div>
+</body>
+</html>
